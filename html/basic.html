@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="">
+
+<head>
+    <title>frontend</title>
+</head>
+
+<body style="color:blue">
+
+    <form action="">
+        <fieldset>
+            <legend>Login:</legend>
+            <h1 id="h01" style="text-align:center">H1</h1>
+            <h2 id="h02" style="text-align:left">H2</h2>
+            <h3 id="h03" style="text-align:right">H3</h3>
+            <h4 id="h04">H4</h4>
+            <h5 id="h05">H5</h5>
+            <h6 id="h06">H6</h6>
+
+            <p id="paragraph">Paragraph</p>
+
+            <a id="link" href="http://www.w3school.com.cn">w3school</a><br/>
+
+            <img id="image" src="w3school.jpg" alt="Submit" width="104" height="142"/><br/>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Login:</legend>
+            username<br/>
+            <label>
+                <input type="text" name="username" value="username" autofocus>
+            </label><br/>
+            password<br/>
+            <label>
+                <input type="password" name="password">
+            </label><br/>
+            <label>
+                <input type="radio" name="sex" value="male" checked>
+            </label>male<br/>
+            <label>
+                <input type="radio" name="sex" value="female">
+            </label>female<br/>
+            <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+            <input type="checkbox" name="vehicle" value="Car">I have a car<br>
+            <input type="submit" name="submit" value="submit"><br/>
+        </fieldset>
+    </form>
+
+    <textarea name="message" rows="10" cols="30">
+    The cat was playing in the garden.
+    </textarea>
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+    <form>
+        <fieldset>
+            <legend>Select</legend>
+            <label>
+                select
+                <select name="select" required>
+                    <option value="select1" selected>select1</option>
+                    <option value="select2">select2</option>
+                    <option value="select3">select3</option>
+                    <option value="select4">select4</option>
+                </select>
+            </label><br/>
+            <label>
+                datalist
+                <input list="datalist" required>
+                <datalist id="datalist">
+                    <option value="datalist1">
+                    <option value="datalist2">
+                    <option value="datalist3">
+                    <option value="datalist4">
+                    <option value="datalist5">
+                </datalist>
+            </label><br/>
+            <input type="submit" name="submit" value="submit"><br/>
+        </fieldset>
+    </form>
+
+    <form id="form_type" action="">
+        <fieldset>
+            <legend>Input Type</legend>
+            <label>
+                text
+                <input type="text" name="text" placeholder="username" autocomplete="on" autofocus>
+            </label><br/>
+            <label>
+                password
+                <input type="password" name="password" placeholder="username" required  title="密码必须输入">
+            </label><br/>
+            <label>
+                radio
+                <input type="radio" name="radio" checked>
+            </label><br/>
+            <label>
+                checkbox
+                <input type="checkbox" name="checkbox" checked>
+            </label><br/>
+
+            <label>
+                color
+                <input type="color" name="color" value="rgb:ffffff">
+            </label><br/>
+            <label>
+                month
+                <input type="month" name="month" value="2000-01" max="2020-01" readonly>
+            </label><br/>
+            <label>
+                week
+                <input type="week" name="week" value="2000-1" max="2020-1">
+            </label><br/>
+            <label>
+                date
+                <input type="date" name="date" value="2000-01-01" max="2020-01-01">
+            </label><br/>
+            <label>
+                datetime
+                <input type="datetime" name="datetime">
+            </label><br/>
+            <label>
+                datetime-local
+                <input type="datetime-local" name="datetime-local">
+            </label><br/>
+            <label>
+                time
+                <input type="time" name="time">
+            </label><br/>
+            <label>
+                email
+                <input type="email" name="email" autocomplete="off">
+            </label><br/>
+            <label>
+                number
+                <input type="number" name="number" min="1" max="10" step="2">
+            </label><br/>
+            <label>
+                range
+                <input type="range" name="range" min="1" max="10">
+            </label><br/>
+            <label>
+                search
+                <input type="search" name="search" value="search" maxlength="10">
+            </label><br/>
+            <label>
+                tel 目前只有 Safari 8 支持 tel 类型。
+                <input type="tel" name="tel" size="11" pattern="[0-9]{11}" title="11位号码">
+            </label><br/>
+            <label>
+                url
+                <input type="url" name="url"  size="50">
+            </label><br/>
+            <label>
+                file
+                <input type="file" name="file" multiple>
+            </label><br/>
+            <input type="submit" name="submit" value="submit" formaction="" formmethod="get"><br/>
+        </fieldset>
+    </form>
+
+    <label>
+        email
+        <input type="email" name="email" autocomplete="off" form="form_type">
+    </label><br/>
+
+    <form>
+        <table border="1" cellspacing="0" cellpadding="10" style="text-align:left">
+            <caption>color</caption>
+            <thead>
+                <tr>
+                    <th>num</th> <th>color</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td> <td>red</td>
+                </tr>
+                <tr>
+                    <td>2</td> <td>yellow</td>
+                </tr>
+                <tr>
+                    <td>3</td> <td>blue</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>4</td> <td rowspan="2"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <table border="1" cellspacing="0" cellpadding="15">
+            <caption>color</caption>
+            <thead>
+                <tr style="text-align:center">
+                    <th>num</th> <td>1</td> <td>2</td> <td>3</td> <td>4</td> <td>5</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr style="text-align:center">
+                    <th>color</th> <td>red</td> <td>yellow</td> <td>blue</td> <td colspan="2"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+<style type="text/css">
+    thead {color:green}
+    tbody {color:blue;height:50px}
+    tfoot {color:red}
+</style>
+</html>
+
+
